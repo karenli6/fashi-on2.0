@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script>
+    window.$ = window.jQuery = require('jquery');
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
+
+
+  <link rel="stylesheet" type="text/css" href="designs.css">
+
+
+  <title></title>
+</head>
+<div id="wrapper" class="toggled bg-light">
+  <!-- start thank you page -->
+  <div id="page-thankyou">
+    <div class="compare" style="background-color: #f7f7f7">
+      <div id="sidebar-wrapper" class="bg-light">
+        <ul class="sidebar-nav">
+
+          <li> <a onclick="navChange('home')" href="#" id="" class="active"><i class="fa fa-home"></i>home</a> </li>
+          <li> <a onclick="navChange('about')" href="#" id="" class="active"><i class="fa fa-home"></i>about</a></li>
+          <li> <a onclick="navChange('intro')" href="#" id="" class="active"><i class="fa fa-home"></i>input</a> </li>
+          <li> <a onclick="navChange('contact')" href="#" id="" class="active"><i class="fa fa-home"></i>contact</a>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+    <div class="column-comparetype" style="text-align:center;">
+      <div class="wrappertype">
+        <div class="typingtype">
+          <div class="column3" style="float:left;
+            width: 100%;
+            padding: 10px;
+            height: auto;
+            background-color:#c0debf;
+            border-radius:2rem;
+            padding-left: 1.5rem;
+            padding-right:1.5rem;
+            text-align:center;
+            box-shadow: 15px 15px #3e5e4a;
+            ">
+            <div class="titletype"> THANK YOU </div>
+            <div style="display: inline-block; font-size: 60px;color: #6a9479;width:100%;background-image:url('imgs/pin.png');
+              background-size: contain;color: rgba(0, 0, 0, 0);margin-bottom:20px;">placeholder</div>
+
+            <div class="input-fieldstype" style="  font-family: 'Quicksand';">
+
+              <div class="itemstype">
+                <p> We appreciate all feedback and we will reach out to you soon!</p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+  <!-- end thank you page-->
+  <!-- start contact page -->
+  <div id="page-contact">
+    <div class="compare" style="background-color: #f7f7f7">
+      <div id="sidebar-wrapper" class="bg-light">
+        <ul class="sidebar-nav">
+
+          <li> <a onclick="navChange('home')" href="#" id="" class="active"><i class="fa fa-home"></i>home</a> </li>
+          <li> <a onclick="navChange('about')" href="#" id="" class="active"><i class="fa fa-home"></i>about</a>
+          </li>
+          <li> <a onclick="navChange('intro')" href="#" id="" class="active"><i class="fa fa-home"></i>input</a> </li>
+          <li> <a onclick="navChange('contact')" href="#" id="" class="active"><i class="fa fa-home"></i>contact</a>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+    <div class="column-comparetype" style="text-align:center;">
+      <div class="wrappertype">
+        <div class="typingtype">
+          <div class="column2" style="float:left;
+          width: 20%;
+          padding: 10px;
+          height: 300px;
+          ">
+            <img src="imgs/bulb.png" style=" width:100%;display:block; border-radius:3rem; " />
+          </div>
+
+          <div class="column3" style="float:left;
+          width: 80%;
+          padding: 10px;
+          height: auto;
+          background-color:#c0debf;
+          border-radius:2rem;
+          padding-left: 1.5rem;
+          padding-right:1.5rem;
+          text-align:center;
+          box-shadow: 15px 15px #3e5e4a;
+          ">
+
+            <div class="titletype"> Get in touch! </div>
+            <div style="display: inline-block; font-size: 60px;color: #6a9479;width:100%;background-image:url('imgs/pin.png');
+            background-size: contain;color: rgba(0, 0, 0, 0);margin-bottom:20px;">placeholder</div>
+
+            <div class="input-fieldstype" style="  font-family: 'Quicksand';">
+
+              <div class="itemstype">
+                <input id="getName" type="text" style="width:80%;height:40px;border-radius: 10px;margin-bottom:5px;"
+                  placeholder="Enter full name..."></input> <br><br>
+              </div>
+              <div class="itemstype">
+                <input id="getEmail" type="text" style="width:80%;height:40px;border-radius: 10px;"
+                  placeholder="Enter email..."></input> <br><br>
+              </div>
+              <div class="itemstype">
+                <textarea id="getMessage" rows="4" cols="50" style="width:80%;height:auto;border-radius: 10px;"
+                  placeholder="Enter message..."></textarea> <br><br>
+              </div>
+
+            </div>
+
+            <!-- <div class="button3type" type="submit" onclick="gettingText()">send</div> -->
+            <div class="button3type" type="Submit" onclick="gettingContact()">send</div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+  <!-- end contact page-->
+  <!-- start first compare page (intro) -->
+  <div id="page-intro">
+    <div class="compare" style="background-color:#c4f2d4;">
+
+      <div id="sidebar-wrapper" class="bg-light">
+        <ul class="sidebar-nav">
+
+          <li> <a onclick="navChange('home')" href="#" id="" class="active"><i class="fa fa-home"></i>home</a> </li>
+          <li> <a onclick="navChange('about')" href="#" id="" class="active"><i class="fa fa-home"></i>about</a>
+          </li>
+          <li> <a onclick="navChange('intro')" href="#" id="" class="active"><i class="fa fa-home"></i>input</a> </li>
+          <li> <a onclick="navChange('contact')" href="#" id="" class="active"><i class="fa fa-home"></i>contact</a>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+    <div class="column-comparetype" style="background-color:#c4f2d4;text-align:center;">
+      <div class="wrappertype">
+
+
+        <div class="typingtype" style="background-color:#c4f2d4;">
+          <div class="titletype"> input your information: up to 3 links </div>
+          <div class="input-fieldstype" style="text-align:center; font-family: 'Quicksand';">
+
+            <div class="itemstype">
+              <input id="getlink1" type="text"
+                style="width:80%;height:40px;border-radius: 10px;margin-bottom:5px;display:inline-block"
+                placeholder="Enter link..."></input> <br><br>
+            </div>
+            <div class="itemstype">
+              <input id="getlink2" type="text" style="width:80%;height:40px;border-radius: 10px;"
+                placeholder="Enter link..."></input> <br><br>
+            </div>
+            <div class="itemstype">
+              <input id="getlink3" type="text" style="width:80%;height:40px;border-radius: 10px;"
+                placeholder="Enter link..."></input> <br><br>
+            </div>
+
+          </div>
+
+          <!-- <div class="button3type" type="submit" onclick="gettingText()">send</div> -->
+          <div class="button3type" type="Submit" onclick="gettingLink()">send</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- end first compare page page (intro) -->
+
+  <!-- start about page -->
+  <div id="page-about">
+    <div class="compare" style="background-color:#c4f2d4;">
+
+      <div id="sidebar-wrapper" class="bg-light">
+        <ul class="sidebar-nav">
+
+          <li> <a onclick="navChange('home')" href="#" id="" class="active"><i class="fa fa-home"></i>home</a> </li>
+          <li> <a onclick="navChange('about')" href="#" id="" class="active"><i class="fa fa-home"></i>about</a>
+          </li>
+          <li> <a onclick="navChange('intro')" href="#" id="" class="active"><i class="fa fa-home"></i>input</a> </li>
+          <li> <a onclick="navChange('contact')" href="#" id="" class="active"><i class="fa fa-home"></i>contact</a>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+    <div class="column-comparetype" style="text-align:center;">
+      <div class="wrappertype">
+        <div class="typingtype">
+          <div class="row" style="margin-top:5rem;float: bottom;
+          width:100%;
+          ">
+            <div class="column1">
+              <h>What is our purpose? </h>
+            </div>
+            <div class="column1">
+              <img src="imgs/bulb.png" />
+              <h>What are our calculations? </h>
+            </div>
+            <div class="column1">
+              <img src="imgs/bulb.png" />
+              <h>What are the benefits?</h>
+            </div>
+
+          </div>
+
+          <div class="row" style="float:bottom;
+          width:100%;">
+            <div class="column1">
+              <img src="imgs/bulb.png" />
+              <h>Step1 </h>
+            </div>
+            <div class="column1">
+              <img src="imgs/bulb.png" />
+              <h>Step 2</h>
+            </div>
+            <div class="column1">
+              <img src="imgs/bulb.png" />
+              <h>Step 3</h>
+              </h>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+  <!-- end about page -->
+
+  <!--  home page -->
+
+  <div id="page-container">
+    <div class="page">
+    
+      <div class="column-learn" style="background-color:#c4f2d4;padding-top:400px;text-align:center;">
+        <div
+          style="display: inline-block; font-size: 20px; font-family: 'Quicksand', sans-serif; font-weight: 400; color: #6a9479;width:100%;">
+          welcome to</div>
+        <div style="display: inline-block; font-size: 100px;color: #6a9479;">FASHION</div>
+        <div style="display: inline-block; font-size: 100px;color: #6a9479;width:100%;background-image:url('imgs/pin.png');
+        background-size: contain;color: rgba(0, 0, 0, 0);margin-bottom:20px;">placeholder</div>
+        <div
+          style="display: inline-block; font-size: 17px; font-family: 'Quicksand', sans-serif; font-weight: 400; color: #6a9479;width:30%;margin-bottom:20px;">
+          shop smarter and cleaner — reduce the environmental footprint of clothing while maintaining style
+        </div>
+
+
+        <div class="button" style="margin-left:40%;" id="learn-submit" type="Submit" onclick="navChange('intro')">
+          start</div>
+        <!-- <div class="button" id="learn-submit" type="Submit" onclick="navChange('')">continue</div> -->
+
+      </div>
+
+
+    </div>
+  </div>
+  <!-- end home page -->
+</div>
+
+<body>
+
+
+</body>
+
+
+<script>
+
+  var firstvalue;
+  var secondvalue;
+
+
+  function gettingLink() {
+    var x1 = document.getElementById("getlink1");
+    var x2 = document.getElementById("getlink2");
+    var x3 = document.getElementById("getlink3");
+    console.log("got links");
+    navChange("home");
+  }
+  function gettingContact() {
+    var x1 = document.getElementById("getName");
+    var x2 = document.getElementById("getEmail");
+    var x3 = document.getElementById("getMessage");
+    console.log("got contact info");
+    navChange("thankyou");
+  }
+  // function gettingLink() {
+  //   type1 = document.getElementById("getType").value;
+  //   document.getElementById("getLink").innerHTML = type1;
+  //   link1 = document.getElementById("getLink").value;
+  //   document.getElementById("getLink").innerHTML = link1;
+
+
+
+  //   var info = [type1, link1];
+
+  //   const { ipcRenderer } = require('electron')
+
+  //   // send username to main.js 
+  //   ipcRenderer.send('asynchronous-message', info)
+
+  //   // receive message from main.js
+  //   ipcRenderer.on('asynchronous-reply', (event, arg) => {
+  //     console.log(arg);
+  //     document.getElementById("winner").innerHTML = arg;
+  //     firstvalue = arg;
+
+
+  //   });
+
+  //   console.log("we got first value " + firstvalue);
+  //   navChange("moveToDisplay");
+
+
+  // }
+
+  function navChange(page) {
+    if (page == 'contact') {
+      $("#page-intro").hide();
+      $("#page-container").hide();
+      $("#page-contact").show();
+      $("#page-about").hide();
+      $("#page-thankyou").hide();
+
+
+    }
+    if (page == 'about') {
+      $("#page-about").show();
+      $("#page-thankyou").hide();
+
+      $("#page-intro").hide();
+      $("#page-container").hide();
+      $("#page-contact").hide();
+
+    }
+    if (page == 'home') {
+      $("#page-thankyou").hide();
+
+      console.log("moving to home");
+      $("#page-about").hide();
+      $("#page-intro").hide();
+      $("#page-container").show();
+      $("#page-contact").hide();
+    }
+    if (page == 'intro') {
+      $("#page-thankyou").hide();
+      $("#page-intro").show();
+      $("#page-container").hide();
+      $("#page-contact").hide();
+      $("#page-about").hide();
+    }
+
+    if (page == 'thankyou') {
+      $("#page-thankyou").show();
+      $("#page-intro").hide();
+      $("#page-container").hide();
+      $("#page-contact").hide();
+      $("#page-about").hide();
+    }
+  }
+</script>
+</html>
